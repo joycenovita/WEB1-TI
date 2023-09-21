@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learning HTML Forms</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="process.php" method="POST">
+        <fieldset>
+            <legend>Personal Data:</legend>
+
+            <!--Input type Date-->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date"><br>    
+
+            <!--Input type Datetime-local-->
+            <label for="time">Datetime (date and time):</label>
+            <input type="datetime-local" id="time" name="birthdaytime"><br><br>
+
+            <!--Input type email-->
+            <label for="email">Enter your e-mail:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <br>
+            <!--Input type password-->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placehorder="minimum 3 characters">
+            
+            <br><br>
+            <!--Input type text-->
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" ><br>
+
+            <br><br>
+            <!--Select element-->
+            <label for="religion">Choose your religion:</label><br>
+            <select id="religion" name="religion" multiple>
+                <option value="Christian">Christian</option>
+                <option value="Moslem">Moslem</option>
+                <option value="Buddha">Budhist</option>
+                <option value="Hindu">Hindu</option>
+            </select>
+
+            <br><br>
+            <!--Textarea element-->
+            <label for="comment">Write your comment below:</label><br>
+            <textarea id="comment" name="comment" rows="10" cols="30"></textarea>
+
+            <br>
+            <!--Input type radio-->
+            <p>Choose your gender: </p>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <!--Input type checkbox-->
+            <p>Choose your hobbies: </p>
+            <input type="checkbox" id="hobby1" name="hobby1" value="Badminton">
+            <label for="hobby1">Badminton</label><br>
+            <input type="checkbox" id="hobby2" name="hobby2" value ="Futsal">
+            <label for="hobby2">Futsal</label><br>
+            <input type="checkbox" id="hobby3" name="hobby3" value ="Football">
+            <label for="hobby3">Football</label><br>
+            <input type="checkbox" id="hobby4" name="hobby4" value ="Basketball">
+            <label for="hobby4">Basketball</label>
+            
+            <br><br>
+            <!--Input type button-->
+            <input type="button" onclick="alert(Hello World!)" value="Click this button!"><br>
+
+            <!--Input type color-->
+            <label for="favcolor">Select yout fav color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            
+            <br><br>
+            <!--Input type file-->
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+
+            <br><br>
+            <!--Input type Hidden-->
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="submit" value="Submit">
+
+            <br><br>
+            <!--Input type Month-->
+            <label for="month">Month and Year:</label>
+            <input type="month" id="month" name="month">
+
+            <br><br>
+            <!--Input type number-->
+            <label for="quantity">Quantity (between 1 and 20):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="20">
+
+            <br><br>
+            <!--Input type range-->
+            <label for="vol">Volume:</label>
+            <input type="range" id="vol" name="vol" min="0" max="100">
+
+            <br><br>
+            <!--Input type search-->
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+
+            <br><br>
+            <!--Input type tel-->
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+            <br><br>
+            <!--Input type time-->
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+
+            <br><br>
+            <!--Input type url-->
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage">
+
+            <br><br>
+            <!--Input type week-->
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
+
+            <br><br>
+            <!--Input type Image-->
+            <input type="image" src="Submit Now.gif" alt="Submit" width="175" height="90">
+            
+
+            <br><br>
+            <!--Input type submit-->
+            <input type="submit">
+
+            <!--Input type reset-->
+            <input type="reset"> 
+        </fieldset>
+    </form>
+</body>
+</html>

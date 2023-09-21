@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .container {
+     border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+    }
+
+    .container::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    }
+
+    .container span {
+    font-size: 20px;
+    margin-right: 15px;
+    }
+
+    @media (max-width: 500px) {
+    .container {
+        text-align: center;
+    }
+    .container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+    }
+</style>
+</head>
+<body>
+
+<h2>Testimonials</h2>
+<p>This is my first testimonials with add CSS</p>
+
+<h2>Video Presentation</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+
+    <h2>Audio Clip</h2>
+    <audio controls>
+        <source src="your_audio_file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+<div class="container">
+  <img src="Plato.jpeg" alt="Avatar" style="width:90px">
+  <p><span>Plato</span> Greek Philosopher</p>
+  <blockquote>"Excellence is not a gift, but a skill that takes practice. We do not act rightly because we are excellent, in fact we achieve excellence by acting rightly"</blockquote>
+</div>
+<a target="_blank" rel="noopener" href="index.html">Index</a><br>
+<a target="_blank" rel="noopener" href="portfolio.html">Portfolio</a><br>
+<a target="_blank" rel="noopener" href="contact.html">Contact</a><br>
+<a target="_blank" rel="noopener" href="testimonials.html">Testimonials</a><br>
+</body>
+</html>
