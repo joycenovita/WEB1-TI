@@ -1,0 +1,1 @@
+function lqd_img(i){var d=$(i);$(d).each((function(d){var l=$(this).find("img").attr("src");l&&(".lqd"==i?($(this).find("img").hide(),$(this).css("background-image","url("+l+")")):$(this).append('<div class="lqd_img" style="background-image:url('+l+');"></div>'))}))}function liquid_img(){lqd_img(".lqd"),lqd_img(".lqd_block")}liquid_img();
